@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>	Blogs</title>
+	<link rel="stylesheet" href="SASS/style.css" >
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178052531-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-178052531-1');
+	</script>
+
+
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" >
+	<!-- Font awesome CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Programming icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+</head>
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">Blogs </a>
+		<div class="toggle" onclick="toggleMenu();">
+		</div>
+		<ul class="menu">
+			<li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="projects.html" onclick="toggleMenu();">Projects</a></li>
+			<li><a href="" onclick="toggleMenu();">Blogs</a></li>
+			<li><a href="certifications.html" onclick="toggleMenu();">Credentials</a></li>
+		</ul>
+	</header>
+	
+	<div class="loaderContainer">
+		<img class="spinner" src="img/spinner.svg"/>
+	</div>
+	<section class="container" id="projects">
+		<div class="heading ">
+			<h2>take a Look</h2>
+		</div>
+		<div class="content projectPage">
+			<ul class="projectsList">
+                <li class="projectItem">
+                    <article>
+                        <h1>Dummy Blog</h1>
+                        <small>8 November 2020</small>
+                        <p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at. Odio ut enim blandit volutpat maecenas volutpat blandit. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Mus mauris vitae ultricies leo integer. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Est ante in nibh mauris. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Penatibus et magnis dis parturient montes nascetur. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Nunc sed velit dignissim sodales ut eu sem integer vitae. Aliquam purus sit amet luctus venenatis lectus magna. Tortor at risus viverra adipiscing at in. At tempor commodo ullamcorper a lacus vestibulum. Eget duis at tellus at urna condimentum mattis. Diam ut venenatis tellus in metus vulputate eu scelerisque.
+                        </p>
+                        <a href="#" class="btn btnBorder">Read More</a>                       
+                    </article>
+                </li>
+                <li class="projectItem">
+                    <article>
+                        <h1>Technical Blog</h1>
+                        <small>5 November 2020</small>
+                        <p>
+						   This will be my first technical blog on how i started with web development what motivated with me for it and all. Actually its a very dramatic kind of story. coz everyone around me was into python and everybody was advicing me to get into python but now as i know the insider's  truth about the industry with the help of @tanaypratap i know there aren't enough jobs in python as of the strength students are going into it. there a big hype around python that its the future. Hold on my child industry takes time to Change Even if it changeditwon't be overnight. so don't take that much tension dude chill Folks. 
+                        </p>
+                        <a href="" class="btn btnBorder">Read More</a>                        
+                    </article>
+                </li>
+                <li class="projectItem">
+                    <article>
+                        <h1>Non - Technical Blog</h1>
+                        <small> 30 November 2020</small>
+                        <p>Some non-Technical Stuff around my life it will be around my daily lifestyle How i do the day to day stuff. attend college lectures, go for outing, spend some family time together and doing everything required without compromising on my studies naah not college studies but some valuable things which i love to work on anytime.   :)</p>
+                        <a href="" class="btn btnBorder">Read More</a>                        
+                    </article>
+                </li>
+            </ul>
+		</div>
+	</section>
+
+
+	<div class="copyright">
+		Copyright &copy; 2020 <a href="https://www.linkedin.com/in/vrushabh-dhatrak-328ab0148/"> Vrushabh Dhatrak.</a>
+	</div>
+
+	<script  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript"
+		src = "script.js"
+	></script>
+</body>
+</html>
