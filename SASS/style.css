@@ -1,3 +1,8 @@
+:root {
+    --primary-color:#EC4899;
+    --dark-grey:#4C1D95;
+    --light-grey:#E5E7EB;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +17,7 @@ section {
 .banner {
 	position: relative;
 	min-height: 100vh;
-	background-color: #111;
+	background-color: var(--dark-grey);
 	background-size: cover;
 	background-position: right;
 	display: flex;
@@ -64,7 +69,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	transition: 0.5s;
-	background: #000;
+	background: var(--dark-grey);
 } 
 
 header.sticky {
@@ -197,7 +202,7 @@ img {
 }
 
 .contact, .project, .certificates {
-	background: #111;
+	background: var(--dark-grey);
 }
 .projectsList {
 	list-style: none;
@@ -388,6 +393,7 @@ section.Skills .heading {
 	outline: none;
 	border: none;
 	color: #fff;
+	border-radius: 10px;
 }
 
 .formBx form textarea {
@@ -453,8 +459,8 @@ section.contact .heading {
 }
 
 .copyright {
-	background: #000;
-	color: #444;
+	background:var(--dark-grey);
+	color: #fff;
 	text-align: center;
 	padding: 10px;
 }
@@ -462,11 +468,11 @@ section.contact .heading {
 	font-size: 0.9em;
 }
 .copyright a {
-	color: #444;
+	color: #fff;
 	text-decoration: none;
 }
 .copyright a:hover {
-	color: #fffeee;
+	color:black;
 }
 
 .w40 img {
