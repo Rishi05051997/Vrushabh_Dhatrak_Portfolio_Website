@@ -3,6 +3,9 @@
     --dark-grey:#4C1D95;
     --light-grey:#E5E7EB;
 }
+ul li {
+	list-style-type: none;
+}
 * {
 	margin: 0;
 	padding: 0;

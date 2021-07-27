@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>	Blogs</title>
+	<link rel="stylesheet" href="SASS/style.css" >
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178052531-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-178052531-1');
+	</script>
+
+
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" >
+	<!-- Font awesome CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Programming icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+</head>
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">Blog On Javascript </a>
+		<div class="toggle" onclick="toggleMenu();">
+		</div>
+		<ul class="menu">
+			<li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="projects.html" onclick="toggleMenu();">Projects</a></li>
+			<li><a href="" onclick="toggleMenu();">Blogs</a></li>
+			<li><a href="certifications.html" onclick="toggleMenu();">Credentials</a></li>
+		</ul>
+	</header>
+	
+	<div class="loaderContainer">
+		<img class="spinner" src="img/spinner.svg"/>
+	</div>
+	<section class="container" id="projects">
+		<div class="heading ">
+			<h2>take a Look</h2>
+		</div>
+		<div class="content projectPage">
+			<div class="blog">
+                <h2>Javascript Basics</h2>
+                <p>So let's take a simple example, all people reading this blog mostlly use car, motorcycle and in exceptional case helicopter or aeroplane 😂😂.So we are making herea a simple analogy here car is having skeleton, then car is having color and car is having engine right, so we are not moving in depth of automobile but simply for making a simple car we need atleast these manny things ok. So anology of real world exampe with web development as below </p>
+                <ul>
+                    <li>Car <strong>Skeleton</strong> >>> <strong>HTML</strong></li>
+                    <li>Car <strong>Color</strong> >>> <strong>CSS</strong></li>
+                    <li>Car <strong>Engine</strong> >>> <strong>JavaScript</strong></li>
+                </ul>
+                <h3>What is HTML5 ?</h3>
+                <p>It simply adds structure to our web page i.e.., Layout, Section, Heading and Paragraph etc</p>
+                <h3>What is CSS3 ?</h3>
+                <p>It simply styles our web page i.e.., coloring, borders, background color etc</p>
+                <h3>What makes Javascript unique? So Javascript is having following features :</h3>
+                <ul>
+                    <li>
+                        - It supported by both HTML and CSS
+                    </li>
+                    <li>
+                        - It can also make API -- Application Programming Interface with the help of NodeJs as well as ExpressJs
+                    </li>
+                    <li>
+                        - It's one kind of scripting as well as interpreted language
+                    </li>
+                    <li>
+                        - It is used to make web pages live.
+                    </li>
+                    <li>
+                        - It is programatically perform actions within the page
+                    </li>
+                    <li>
+                        - Javascript can execute not only in the browser but also on the server
+                    </li>
+                    <li>
+                        - Javascript can be used on client side as well as on server side.
+                    </li>
+                    <li>
+                        - Javascript evolved greatly as a language & is now used to perform wide variety of tasks
+                    </li>
+                </ul>
+                <div id="statements">
+                    <h3>Statements in Javascript</h3>
+                    <p>So Javascript code always written inside <strong>Script</strong> tag within our HTML web page. The <strong>Script</strong> element tage is placed within then <strong>head</strong> element tag</p>
+                    <p>So what is statements in javascripts, for writing logic inside <strong>Script</strong> tag we used different statement for example</p>
+                    <ul>
+                        <li>- for defining one variable we can used as  ---- var name = "Vrushabh";</li>
+                        <li>- we can also HTML code with the help of Javascript  ---- document.write('Hello World')</li>
+                    </ul>
+                    <div class="code-bg">
+                        <div class="code-img">
+                            <img src="./images/js-2.png" alt="name" />
+                        </div>
+                    </div>
+                    <h3>The Output of Above Code Snippets is </h3>
+                    <div class="code-output">
+                        <img src="images/js-1.png" alt="name" height="300px" />
+                    </div>
+                </div>
+                <div id="variables">
+                    <h3>Variables in JavaScript</h3>
+                    <p>Varibles is nothing but a container which is used to store data inside that container. </p>
+                    <h4>Rules to write a variable in Javascript</h4>
+                    <ul>
+                        <li>
+                            - must always starts with <strong>var</strong> i.e.., <strong>var name = "Vrushabh"</strong>
+                        </li>
+                        <li>
+                            - It can also decleare without assigning value i.e.., <strong>var name;</strong>
+                        </li>
+                        <li>
+                            - variables are case sensitive i.e.., <strong>var name & var NAME both are different variables</strong>
+                        </li>
+
+                    </ul>
+                    <div class="img-variable">
+                        <img src="images/variable.png" alt="name" />
+                    </div>
+                </div>
+                <div id="datatypes">
+                    <h3>Data Types in Javascript</h3>
+                    <h4>There are following data types in Javascript</h4>
+                    <ul>
+                        <li>
+                            <strong>String</strong> -- text/characters, must always used inside sigle or double quotes i.e.., <strong>var name = "Vrushabh"</strong>
+                        </li>
+                        <li>
+                            <strong>Boolean</strong> -- it will either true or false i.e.., <strong>var name = true</strong>
+                        </li>
+
+                    </ul>
+                    <div class="data-img">
+                        <img src="images/data-types.png" alt="name" />
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+
+
+	<div class="copyright">
+		Copyright &copy; 2020 <a href="https://www.linkedin.com/in/vrushabh-dhatrak-328ab0148/"> Vrushabh Dhatrak.</a>
+	</div>
+
+	<script  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript"
+		src = "script.js"
+	></script>
+</body>
+</html>
