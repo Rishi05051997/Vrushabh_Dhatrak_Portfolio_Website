@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>	Blogs</title>
+	<link rel="stylesheet" href="SASS/style.css" >
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178052531-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-178052531-1');
+	</script>
+
+
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" >
+	<!-- Font awesome CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Programming icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+</head>
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">JavaScript Interpreted or Compiled? </a>
+		<div class="toggle" onclick="toggleMenu();">
+		</div>
+		<ul class="menu">
+			<li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="projects.html" onclick="toggleMenu();">Projects</a></li>
+			<li><a href="" onclick="toggleMenu();">Blogs</a></li>
+			<li><a href="certifications.html" onclick="toggleMenu();">Credentials</a></li>
+		</ul>
+	</header>
+	
+	<div class="loaderContainer">
+		<img class="spinner" src="img/spinner.svg"/>
+	</div>
+	<section class="container" id="projects">
+		<div class="heading ">
+			<h2>take a Look</h2>
+		</div>
+		<div class="content projectPage">
+			<div class="blog">
+                <h2>JavaScript Interpreted or Compiled?</h2>
+                <br />
+                
+                <h3>Introduction</h3>
+                <p>As a beginner to the JavaScript programming language, I had faced this question so many times:</p>
+                <br />
+                
+                
+                <strong style="font-size:1.2rem">Does JavaScript Interprets the Source code, or it really Compiles?</strong>
+                <p>Many of the answers that I found on the internet made me as Confused as,
+                    <img src="./img/confuse.gif" alt="">
+                </p>
+                <br />
+                <h3>JavaScript Interpreted or Compiled?</h3>
+                <br />
+                
+                <p><p>In general, JavaScript is categorized as a dynamic or interpreted language. There are lots of misunderstandings about this fact. We need to ask and find the answers of,</p></p>
+                <ol>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">Is it entirely fair to say, JavaScript is an Interpreted Language?</li>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">What is the difference between an Interpreter and a Compiler?</li>
+                </ol>
+                <br />
+               
+                <h3>Interpreter (As Mentioned in Wikipedia)</h3>
+                <p style="font-style: italic;">
+                    An interpreter is a computer program that directly executes instructions written in a programming or scripting language without requiring them previously to have been compiled into a machine language program. It translates one Statement at a time.
+                </p>
+                <ol>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">Reads line by line and executes</li>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">faster</li>
+                </ol>
+                <br />
+                <h3>Compilor (As Mentioned in Wikipedia)</h3>
+                <p style="font-style: italic;">
+                    A compiler is computer software that transforms computer code written in one programming language (the source language, like JavaScript, etc.) into another programming language (the target language, like machine code).
+                </p>
+                <ol>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">Reads entire code and create an 
+                        optimized form of it even before 
+                        execution.</li>
+                    <li style="margin:0 0 0 3rem;font-weight: bold;">More efficient</li>
+                </ol>
+                <br />
+                <p>
+                    The first thing to understand, Computer doesn't understand the programming languages directly. Every programming language got its own syntax, grammar, and structure. No matter what programming languages(JavaScript, Python, Java, etc.) are writing the code with, it has to be translated into something that the machine(Computer) understands.
+                </p>
+                <br />
+
+                <p>
+                    The most important fact here is, how does the JavaScript source code go through the journey of becoming a machine-understandable language? JavaScript Engine performs many of the steps(in fact, more cleaner and sophisticated ways) that a typical Compiler would perform in compiling source code.
+                </p>
+                <br />
+                <h4>In JavaScript, the source code typically goes through the following phases before it is executed,</h4>
+                <br />
+                <ol>
+                    <li>
+                        
+                        <dl>
+                            <dt style="font-weight:bold">Tokenization</dt>
+                            <dd>-  Breaking up a source code string into meaningful chunks called, Tokens. For example, the source code var age = 7; can be tokenize as, var, age, =, 7 and, ;.</dd>
+                            
+                        </dl>
+
+                    </li>
+
+                    <li>
+                        
+                        <dl>
+                            <dt style="font-weight:bold">Parsing:</dt>
+                            <dd>-   Parsing is a methodology to take the array of Tokens as input and turn it into a tree of nested elements understood by the grammar of the programming language. This tree is called Abstract Syntax Tree(AST).</dd>
+                            
+                        </dl>
+                        
+                    </li>
+
+                    <li>
+                        
+                        <dl>
+                            <dt style="font-weight:bold">Code Generation:</dt>
+                            <dd>-    In this phase, the AST is used as input, and an executable byte-code is generated that is understood by the environment(or platform) where the executable code will be running. The executable byte-code is then refined/converted even further by the optimizing JIT (Just-In-Time) compiler.</dd>
+                            
+                        </dl>
+                        
+                    </li>
+                    
+                </ol>
+                <img src="./images/token-1.PNG" alt="">
+                <br />
+                <img src="./images/token-2.gif" alt="">
+                <br />
+                <h4>All Above steps little bit more understandable way</h4>
+                <ol>
+                    <li>
+                        After a program leaves a developer's editor, it gets transpiled by Babel, then packed by Webpack (and perhaps half a dozen other build processes), then it gets delivered in that very different form to a JS engine.
+                    </li>
+                    <li>
+                        The JS engine parses the code to an AST.
+                    </li>
+                    <li>
+                        Then the engine converts that AST to a kind-of byte code, a binary intermediate representation (IR), which is then refined/converted even further by the optimizing JIT compiler.
+                    </li>
+                    <li>
+                        Finally, the JS VM executes the program.
+                    </li>
+                </ol>
+                <img src="./images/parsing.PNG" alt="">
+                <br />
+                <h3>Conclusion</h3>
+                <p>
+                    To conclude, JavaScript code indeed gets compiled. It is more closer to be Compiled than Interpreted. It is compiled every time. Next time, if someone asks the question, <strong>Does JavaScript really Compiles?</strong> The answer is a loud <strong>YES</strong>. After the compilation process produces a binary byte code, the JS virtual machine executes it.
+                    
+                </p>
+                <br />
+                <p>
+                    JavaScript is an interpreted language, not a compiled language. A program such as C++ or Java needs to be compiled before it is run. The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute. In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. More modern browsers use a technology known as <strong>Just-In-Time (JIT) compilation</strong>, which compiles JavaScript to executable bytecode just as it is about to run.
+                </p>
+            </div>
+		</div>
+	</section>
+
+
+	<div class="copyright">
+		Copyright &copy; 2020 <a href="https://www.linkedin.com/in/vrushabh-dhatrak-328ab0148/"> Vrushabh Dhatrak.</a>
+	</div>
+
+	<script  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript"
+		src = "script.js"
+	></script>
+</body>
+</html>
